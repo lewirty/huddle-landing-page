@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+.attribution{
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a{ 
+    color: hsl(228, 89%, 31%); 
+}
+body{
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(./images/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+html{
+    color: #fff;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+a{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+.logo{
+    margin: 50px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 75px;
+}
+.container img{
+    margin: 50px;
+}
+.container .containerTexto{
+    flex-direction: column;
+    position: relative;
+    bottom: 100px;
+}
+.container .containerTexto h1{
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+.container .containerTexto p{
+    font-size: 1.2rem;
+    max-width: 75%;
+    margin-bottom: 35px;
+}
+.container .containerTexto a{
+    background-color: #fff;
+    padding: 12px 50px;
+    margin-top: 5px;
+    border-radius: 25px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+.container .containerTexto a:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: #fff
+}
+.social{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+.social .icone a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    border: 2px solid #fff;
+    margin: 0 5px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+.social .icone a:hover{
+    cursor: pointer;
+    color: hsl(300, 69%, 71%);
+    border: 2px solid hsl(300, 69%, 71%);
+}
+.footer p{
+    position: relative;
+    top: 50px;
+}
+
+@media(max-width:1175px){
+    body{
+        background-image: url(./images/bg-mobile.svg);
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .container img{
+        max-width: 700px;
+        width: 90%;
+        margin-top: 0px;
+    }
+    .container .containerTexto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        text-align: center;
+    }
+    .container .containerTexto h1{
+        font-size: 1.5rem;
+    }
+    .social{
+        position: relative;
+        bottom: 75px;
+        margin-right: 0;
+        justify-content: center;
+    }
+    .container .containerTexto a{
+        padding: 12px 100px;
+    }
+}
